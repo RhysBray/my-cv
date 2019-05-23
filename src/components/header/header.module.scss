@@ -1,0 +1,13 @@
+@import "../../global.scss";
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  border-bottom: solid black 1pt;
+  @extend %flex-centered;
+  background-color: $primary;
+  h1 {
+    color: white;
+    font-size: 30pt;
+  }
+}

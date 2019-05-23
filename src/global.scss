@@ -1,0 +1,11 @@
+// variables
+$primary: red;
+$secondary: purple;
+$tertiary: blue;
+
+// inheritance
+%flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -2,10 +2,14 @@
 
 // unclicked
 .header {
+  .click-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
   width: 100vw;
   height: 100vh;
   @extend %flex-centered;
-  flex-direction: column;
   background-color: $primary;
   position: fixed;
   transition-duration: 0.5s;
@@ -17,31 +21,52 @@
     h1 {
       color: $text;
       font-size: 30pt;
-      @extend %flex-centered;
+      text-align: center;
       transition-duration: 0.5s;
     }
     .face {
-      width: 150px;
+      width: 175px;
       height: auto;
       border: white solid 1pt;
       border-radius: 10px;
       transition-duration: 0.5s;
     }
-  }
-  h2 {
-    color: $text;
-    font-size: 12pt;
+
+    h2 {
+      color: $text;
+      font-size: 12pt;
+    }
+    .links {
+      color: white;
+      font-size: 20pt;
+      width: 100px;
+      height: 40px;
+      @extend %flex-centered;
+      justify-content: space-around;
+      z-index: 1;
+      .icon {
+        color: white;
+        font-size: 20pt;
+        padding: 2px;
+        transition-duration: 0.2s;
+        &:hover {
+          color: black;
+          font-size: 30pt;
+          padding: 0 15px 0 15px;
+        }
+      }
+    }
   }
 }
 
 // clicked
-
 .moved-away {
   background-color: rgb(149, 109, 161);
   width: 120px;
   border-right: solid black 1pt;
   .contents {
-    transform: translateY(-40vh);
+    transform: translateY(-37vh);
+
     h1 {
       font-size: 15pt;
     }
@@ -49,9 +74,10 @@
       width: 75px;
       height: auto;
     }
-  }
-  h2 {
-    display: none;
+
+    h2 {
+      display: none;
+    }
   }
 }
 .moved-away:hover {
@@ -62,19 +88,17 @@
 @media only screen and (max-width: 426px) {
   // clicked
   .moved-away {
-    height: 120px;
+    height: auto;
     width: 100vw;
     border-right: none;
     border-bottom: black solid 1pt;
-
     .contents {
       transform: translateY(0);
       h1 {
-        font-size: 15pt;
+        font-size: 25pt;
       }
       .face {
-        width: 75px;
-        height: auto;
+        display: none;
       }
     }
   }

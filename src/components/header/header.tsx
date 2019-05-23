@@ -1,7 +1,6 @@
 import * as React from "react";
 import styles from "./header.module.scss";
 import rhys from "../../assets/images/square.jpg";
-import { tsTypeAliasDeclaration } from "@babel/types";
 
 export interface IProps {}
 

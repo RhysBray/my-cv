@@ -1,0 +1,17 @@
+@import "../../global.scss";
+
+.soon {
+  @extend %flex-centered;
+  flex-direction: column;
+  font-size: 45pt;
+  color: $text;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 426px) {
+  .soon {
+    font-size: 25pt;
+    flex-wrap: wrap;
+  }
+}

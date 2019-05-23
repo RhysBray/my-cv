@@ -1,13 +1,81 @@
 @import "../../global.scss";
 
+// unclicked
 .header {
   width: 100vw;
-  height: 10vh;
-  border-bottom: solid black 1pt;
+  height: 100vh;
   @extend %flex-centered;
+  flex-direction: column;
   background-color: $primary;
-  h1 {
-    color: white;
-    font-size: 30pt;
+  position: fixed;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  .contents {
+    @extend %flex-centered;
+    flex-direction: column;
+    transition-duration: 0.5s;
+    h1 {
+      color: $text;
+      font-size: 30pt;
+      @extend %flex-centered;
+      transition-duration: 0.5s;
+    }
+    .face {
+      width: 150px;
+      height: auto;
+      border: white solid 1pt;
+      border-radius: 10px;
+      transition-duration: 0.5s;
+    }
+  }
+  h2 {
+    color: $text;
+    font-size: 12pt;
+  }
+}
+
+// clicked
+
+.moved-away {
+  background-color: rgb(149, 109, 161);
+  width: 120px;
+  border-right: solid black 1pt;
+  .contents {
+    transform: translateY(-40vh);
+    h1 {
+      font-size: 15pt;
+    }
+    .face {
+      width: 75px;
+      height: auto;
+    }
+  }
+  h2 {
+    display: none;
+  }
+}
+.moved-away:hover {
+  background-color: $primary;
+}
+
+// responsive
+@media only screen and (max-width: 426px) {
+  // clicked
+  .moved-away {
+    height: 120px;
+    width: 100vw;
+    border-right: none;
+    border-bottom: black solid 1pt;
+
+    .contents {
+      transform: translateY(0);
+      h1 {
+        font-size: 15pt;
+      }
+      .face {
+        width: 75px;
+        height: auto;
+      }
+    }
   }
 }

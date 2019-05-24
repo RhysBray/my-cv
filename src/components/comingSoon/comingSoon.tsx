@@ -6,7 +6,7 @@ export interface IProps {}
 export interface IState {}
 
 class ComingSoon extends React.Component<IProps, IState> {
-  render() {
+  public render() {
     return <p className={styles.soon}>Coming Soon!</p>;
   }
 }

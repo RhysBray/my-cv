@@ -1,13 +1,20 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import HeaderContainer from "./containers/headerContainer";
 import ComingSoonContainer from "./containers/comingSoonContainer";
+import CurrentlyContainer from "./containers/currentlyContainer";
 
 const App: React.FC = () => {
   return (
     <React.Fragment>
       <HeaderContainer />
-      <ComingSoonContainer />
+
+      <main>
+        <div className="page-container">
+          {/* <ComingSoonContainer /> */}
+          <CurrentlyContainer />
+        </div>
+      </main>
     </React.Fragment>
   );
 };

@@ -1,0 +1,38 @@
+@import "./global.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/images/grey-background.png");
+  background-position: center;
+  background-size: cover;
+}
+main {
+  position: relative;
+  left: 13vw;
+  width: 87vw;
+  height: 100vh;
+  @extend %flex-centered;
+}
+
+.page-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.3);
+  width: 70%;
+  height: 80%;
+}
+
+@media only screen and (max-width: 426px) {
+  main {
+    top: 15vh;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
+  }
+}

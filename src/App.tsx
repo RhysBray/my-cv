@@ -3,6 +3,8 @@ import "./App.scss";
 import HeaderContainer from "./containers/headerContainer";
 import ComingSoonContainer from "./containers/comingSoonContainer";
 import CurrentlyContainer from "./containers/currentlyContainer";
+import TechSkillsContainer from "./containers/techSkillsContainer";
+import SummaryContainer from "./containers/summaryContainer";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +15,8 @@ const App: React.FC = () => {
         <div className="page-container">
           {/* <ComingSoonContainer /> */}
           <CurrentlyContainer />
+          <TechSkillsContainer />
+          <SummaryContainer />
         </div>
       </main>
     </React.Fragment>

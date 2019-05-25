@@ -20,7 +20,7 @@
     flex-direction: column;
     transition-duration: 0.5s;
     h1 {
-      color: $text;
+      color: $text1;
       font-size: 30pt;
       text-align: center;
       transition-duration: 0.5s;
@@ -34,7 +34,7 @@
     }
 
     h2 {
-      color: $text;
+      color: $text1;
       font-size: 12pt;
     }
     .links {
@@ -51,7 +51,7 @@
         padding: 2px;
         transition-duration: 0.2s;
         &:hover {
-          color: black;
+          color: rgb(0, 217, 255);
           font-size: 30pt;
           padding: 0 15px 0 15px;
         }

@@ -1,0 +1,23 @@
+@import "../../global.scss";
+
+.title {
+  color: $text2;
+  font-size: 30pt;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.info {
+  color: $text2;
+  font-size: 15pt;
+}
+
+@media only screen and (max-width: 426px) {
+  .title {
+    font-size: 15pt;
+  }
+  .info {
+    font-size: 12pt;
+  }
+}

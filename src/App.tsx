@@ -9,24 +9,35 @@ import QualificationsContainer from "./containers/qualificationsContainer";
 import AcheivementsContainer from "./containers/acheivementsContainer";
 import WorkContainer from "./containers/workContainer";
 import InterestsContainer from "./containers/interestsContainer";
+import { Route, Router, Redirect, Switch } from "react-router-dom";
+import history from "./history";
 
 const App: React.FC = () => {
   return (
     <React.Fragment>
-      <HeaderContainer />
+      <Router history={history}>
+        <HeaderContainer />
 
-      <main>
-        <div className="page-container">
-          {/* <ComingSoonContainer /> */}
-          <CurrentlyContainer />
-          <TechSkillsContainer />
-          <SummaryContainer />
-          <QualificationsContainer />
-          <AcheivementsContainer />
-          <WorkContainer />
-          <InterestsContainer />
-        </div>
-      </main>
+        <main>
+          <div className="page-container">
+            {/* <ComingSoonContainer /> */}
+            <Switch>
+              <Route path="/currently" component={CurrentlyContainer} />
+              <Route path="/tech-skills" component={TechSkillsContainer} />
+              <Route path="/summary" component={SummaryContainer} />
+              <Route
+                path="/qualifications"
+                component={QualificationsContainer}
+              />
+              <Route path="/acheivements" component={AcheivementsContainer} />
+              <Route path="/work-experience" component={WorkContainer} />
+              <Route path="/interests" component={InterestsContainer} />
+              <Route exact={true} path="/" component={CurrentlyContainer} />
+              <Redirect to="/currently" />
+            </Switch>
+          </div>
+        </main>
+      </Router>
     </React.Fragment>
   );
 };

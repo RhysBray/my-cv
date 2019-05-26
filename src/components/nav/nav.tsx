@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export interface IProps {
   notVisible: boolean;
+  menuOpen: boolean;
 }
 
 export interface IState {}
@@ -11,43 +12,45 @@ export interface IState {}
 class Nav extends React.Component<IProps, IState> {
   public render() {
     let visibility = "";
+    let menu = "";
+    this.props.menuOpen ? (menu = styles.show) : (menu = "");
     this.props.notVisible ? (visibility = styles.visible) : (visibility = "");
     return (
-      <nav className={`${styles.navigation} ${visibility}`}>
+      <nav className={`${styles.navigation} ${visibility} ${menu}`}>
         <ul className={styles.links}>
           <li>
             <NavLink className={styles.navlink} to="/currently">
-              cur
+              Current
             </NavLink>
           </li>
           <li>
             <NavLink className={styles.navlink} to="/tech-skills">
-              skills
+              Tech Skills
             </NavLink>
           </li>
           <li>
             <NavLink className={styles.navlink} to="/summary">
-              summ
+              Summary
             </NavLink>
           </li>
           <li>
             <NavLink className={styles.navlink} to="/qualifications">
-              qual
+              Qualifications
             </NavLink>
           </li>
           <li>
             <NavLink className={styles.navlink} to="/acheivements">
-              achie
+              Acheivements
             </NavLink>
           </li>
           <li>
             <NavLink className={styles.navlink} to="/work-experience">
-              work
+              Work-Experience
             </NavLink>
           </li>
           <li>
             <NavLink className={styles.navlink} to="/interests">
-              7inter
+              Interests
             </NavLink>
           </li>
         </ul>

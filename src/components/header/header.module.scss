@@ -38,8 +38,6 @@
       font-size: 12pt;
     }
     .links {
-      color: white;
-      font-size: 20pt;
       width: 100px;
       height: 40px;
       @extend %flex-centered;
@@ -51,10 +49,13 @@
         padding: 2px;
         transition-duration: 0.2s;
         &:hover {
-          color: rgb(0, 217, 255);
+          color: $accent;
           font-size: 30pt;
           padding: 0 15px 0 15px;
         }
+      }
+      .menu {
+        display: none;
       }
     }
   }
@@ -63,10 +64,8 @@
 // clicked
 .moved-away {
   width: 13vw;
-  border-right: solid black 1pt;
+  border-right: solid $accent 1pt;
   .contents {
-    // transform: translateY(0vh);
-
     h1 {
       font-size: 15pt;
     }
@@ -74,7 +73,6 @@
       width: 75px;
       height: auto;
     }
-
     h2 {
       display: none;
     }
@@ -87,19 +85,47 @@
 
 // responsive
 @media only screen and (max-width: 426px) {
+  .header {
+    .contents {
+      .face {
+        width: 175px;
+      }
+      .links {
+        .icon {
+          font-size: 25pt;
+          padding: 5px;
+          &:hover {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+
   // clicked
   .moved-away {
-    height: 15vh;
+    height: 12vh;
     width: 100vw;
     border-right: none;
     border-bottom: black solid 1pt;
     .contents {
-      // transform: translateY(0);
+      transform: translateY(5vh);
+      width: 100px;
       h1 {
-        font-size: 25pt;
+        display: none;
       }
       .face {
         display: none;
+      }
+      .links {
+        .menu {
+          display: inline-block;
+          position: absolute;
+          left: 45vw;
+          top: -1vh;
+          font-size: 40pt;
+          color: $text1;
+        }
       }
     }
   }

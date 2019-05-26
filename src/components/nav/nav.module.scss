@@ -13,13 +13,6 @@
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    .navlink {
-      width: 100%;
-      height: 100%;
-      @extend %flex-centered;
-      color: $text1;
-      text-decoration: none;
-    }
     li {
       border: white solid 2pt;
       width: 90%;
@@ -28,9 +21,17 @@
       background-color: $primary;
       z-index: 1;
       transition-duration: 1.5s;
+      text-align: center;
+      .navlink {
+        width: 100%;
+        height: 100%;
+        @extend %flex-centered;
+        color: $text1;
+        text-decoration: none;
+      }
     }
     li:hover {
-      background-color: rgb(32, 0, 51);
+      background-color: $accent;
       transition-duration: 0s;
     }
   }
@@ -41,12 +42,27 @@
 
 @media only screen and (max-width: 426px) {
   .navigation {
-    height: 20px;
+    height: 50px;
+    margin-top: 5px;
+    visibility: hidden;
+    z-index: -1;
     .links {
-      flex-direction: row;
-      height: 20px;
+      justify-content: flex-start;
+      position: relative;
+      left: -30vw;
+      width: fit-content;
+      height: 85vh;
+      padding-top: 1vh;
       li {
+        transition-duration: 0s;
+        width: 90vw;
+        height: 12vh;
       }
     }
+  }
+  .show {
+    transition-duration: 0s;
+    visibility: visible;
+    z-index: 1;
   }
 }

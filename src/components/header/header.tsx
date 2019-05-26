@@ -4,6 +4,7 @@ import rhys from "../../assets/images/square.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import Nav from "../nav";
 
 export interface IProps {}
 
@@ -31,7 +32,7 @@ class Header extends React.Component<IProps, IState> {
             alt="rhys' face"
           />
           <h1 onClick={handleClick}>Rhys Bray</h1>
-          <h2 onClick={handleClick}>- Welcome to my site -</h2>
+          <h2 onClick={handleClick}>- Welcome to my CV site -</h2>
           <section className={styles.links}>
             <a
               href="https://www.linkedin.com/in/rhys-bray-278a70147/"
@@ -51,6 +52,7 @@ class Header extends React.Component<IProps, IState> {
               <FontAwesomeIcon icon={faEnvelopeSquare} />
             </a>
           </section>
+          <Nav notVisible={this.state.isClicked} />
         </div>
       </header>
     );

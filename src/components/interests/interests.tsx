@@ -10,13 +10,22 @@ class Interests extends React.Component<IProps, IState> {
     return (
       <section>
         <h3 className={styles.title}>Interests</h3>
-        <p className={styles.info}>
-          • Gaming – light competitiveness with fiends and family, on PC and
-          Xbox • Gym – not just a way for me to keep fit, but a rewarding way to
-          set myself targets each session. • Learning new things – An odd one
-          but a lot of my free time is learning about something new, like making
-          a life-like CGI donut using Blender!
-        </p>
+        <div className={styles.line} />
+
+        <ul className={styles.info}>
+          <h4 className={styles["sub-heading"]}>Gaming |</h4>
+          <li>light competitiveness with fiends and family, on PC and Xbox</li>
+          <h4 className={styles["sub-heading"]}>Gym |</h4>
+          <li>
+            not just a way for me to keep fit, but a rewarding way to set myself
+            targets each session.
+          </li>
+          <h4 className={styles["sub-heading"]}>Learning new things |</h4>
+          <li>
+            An odd one but a lot of my free time is learning about something
+            new, like making a life-like CGI donut using Blender!
+          </li>
+        </ul>
       </section>
     );
   }

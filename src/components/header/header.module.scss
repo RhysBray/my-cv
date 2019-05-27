@@ -19,23 +19,26 @@
     @extend %flex-centered;
     flex-direction: column;
     transition-duration: 0.5s;
-    h1 {
-      color: $text1;
-      font-size: 30pt;
-      text-align: center;
-      transition-duration: 0.5s;
-    }
     .face {
       width: 250px;
       height: auto;
       border: white solid 1pt;
       border-radius: 10px;
       transition-duration: 0.5s;
+      margin-bottom: 10px;
     }
-
+    h1 {
+      color: $text1;
+      font-size: 30pt;
+      text-align: center;
+      transition-duration: 0.5s;
+      @extend %flex-centered;
+      height: 1.2em;
+    }
     h2 {
       color: $text1;
-      font-size: 12pt;
+      font-size: 14pt;
+      height: 1.5em;
     }
     .links {
       width: 100px;
@@ -45,8 +48,8 @@
       z-index: 1;
       .icon {
         color: white;
-        font-size: 20pt;
-        padding: 2px;
+        font-size: 25pt;
+        padding: 5px;
         transition-duration: 0.2s;
         &:hover {
           color: $accent;
@@ -70,7 +73,7 @@
       font-size: 15pt;
     }
     .face {
-      width: 75px;
+      width: 100px;
       height: auto;
     }
     h2 {

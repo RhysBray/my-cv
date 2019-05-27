@@ -8,13 +8,22 @@ export interface IState {}
 class TechSkills extends React.Component<IProps, IState> {
   public render() {
     return (
-      <section>
+      <section className={styles.section}>
         <h3 className={styles.title}>Tech Skills</h3>
-        <p className={styles.info}>
-          • HTML5 • CSS/SASS • Javascript/Typescript • React with Redux • Rest
-          API’s • Firebase storage/firestore • Github/Github flow • Agile
-          workflow
-        </p>
+        <div className={styles.line} />
+        <h4 className={styles["sub-heading"]}>Gained from _nology |</h4>
+        <ul className={styles.info}>
+          <li>
+            <p>HTML5</p>
+            <p>CSS/SASS</p>
+            <p>Javascript/Typescript</p>
+            <p>React with Redux</p>
+            <p>Hitting Rest API’s</p>
+            <p>Firebase storage/firestore</p>
+            <p>Github/Github flow</p>
+            <p>Agile workflow</p>
+          </li>
+        </ul>
       </section>
     );
   }

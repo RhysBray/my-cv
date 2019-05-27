@@ -27,7 +27,6 @@ class Header extends React.Component<IProps, IState> {
       : (clicked = "");
     const showMenu = () => {
       this.setState({ isBurgerClicked: !this.state.isBurgerClicked });
-      console.log(this.state.isBurgerClicked);
     };
     return (
       <header className={`${styles.header} ${clicked}`}>
@@ -64,6 +63,7 @@ class Header extends React.Component<IProps, IState> {
             </div>
           </section>
           <Nav
+            showMenu={showMenu}
             menuOpen={this.state.isBurgerClicked}
             notVisible={this.state.isScreenClicked}
           />

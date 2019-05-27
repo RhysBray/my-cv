@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: $font1, $font2, $font3;
 }
 html {
   width: 100vw;
@@ -21,16 +22,17 @@ main {
 }
 
 .page-container {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 0px 30px 30px rgba(255, 255, 255, 0.3);
-  max-width: 70%;
+  width: 80%;
+  max-width: 80%;
   max-height: 90%;
   @extend %flex-centered;
   flex-direction: column;
   justify-content: flex-start;
   overflow: auto;
   border-radius: 20px;
-  padding: 0 10px 0 10px;
+  padding: 30px 20px 0 20px;
 }
 
 @media only screen and (max-width: 426px) {
@@ -41,6 +43,10 @@ main {
     height: 85vh;
   }
   .page-container {
-    padding: 5px;
+    padding: 20px 5px 5px 5px;
+    max-width: 95%;
+    width: 95%;
+    max-height: 95%;
+    box-shadow: none;
   }
 }

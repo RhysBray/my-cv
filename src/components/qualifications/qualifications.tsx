@@ -12,7 +12,7 @@ class Qualifications extends React.Component<IProps, IState> {
         <h3 className={styles.title}>Academic Qualifications</h3>
         <div className={styles.line} />
         <ul className={styles.info}>
-          <h4 className={styles["sub-heading"]}>Degree | Mathematics </h4>
+          <h4 className={styles["sub-heading"]}>Degree | Mathematics |</h4>
           <li>
             Graduated with a 2:1 in (BSc) Mathematics from The University of the
             West of England in 2017. Invaluable experience has been gained
@@ -23,7 +23,7 @@ class Qualifications extends React.Component<IProps, IState> {
           </li>
           <h4 className={styles["sub-heading"]}>
             Advanced GCE | Camborne Science and International Academy Sixth-form
-            | 2011-2014
+            | 2011-2014 |
           </h4>
           <li>
             <p>Mathematics B(b)</p>
@@ -33,7 +33,7 @@ class Qualifications extends React.Component<IProps, IState> {
 
           <h4 className={styles["sub-heading"]}>
             Advanced Subsidiary | Camborne Science and International Academy
-            Sixth-form
+            Sixth-form |
           </h4>
           <li>
             <p>Biology C(c)</p>
@@ -43,18 +43,19 @@ class Qualifications extends React.Component<IProps, IState> {
           </li>
 
           <h4 className={styles["sub-heading"]}>
-            GCSE’s | Camborne Science and International Academy | 2006-2011
+            GCSE’s | Camborne Science and International Academy | 2006-2011 |
           </h4>
           <li>
             <p>
-              GCSE’s at Camborne Science and International Academy during years
-              2006-2011. 10 GCSE’s ranging from A*to C including; 2 A*’s for
-              Science; A in each Maths and French; and B for both English and
-              English Literature.
+              10 GCSE’s ranging from A*to C including; 2 A*’s for Science; A in
+              each Maths and French; and B for both English and English
+              Literature.
             </p>
           </li>
 
-          <h4 className={styles["sub-heading"]}>Other qualifications | 2009</h4>
+          <h4 className={styles["sub-heading"]}>
+            Other qualifications | 2009 |
+          </h4>
           <li>
             <p>Functional Mathematics Level 2</p>
             <p>Workplace Hazard Awareness (Entry 3)</p>

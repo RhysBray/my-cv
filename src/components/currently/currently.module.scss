@@ -15,6 +15,10 @@
   @extend %info;
   li {
     @extend %li;
+    p {
+      @extend %li;
+      padding: 5px;
+    }
   }
 }
 

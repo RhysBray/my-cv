@@ -16,6 +16,10 @@
   li {
     @extend %li;
   }
+  p {
+    @extend %li;
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 426px) {

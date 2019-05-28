@@ -133,3 +133,20 @@
     }
   }
 }
+
+@media only screen and (max-height: 551px) {
+  .header {
+    .contents {
+      .face {
+        width: 150px;
+      }
+    }
+  }
+  .moved-away {
+    .contents {
+      .face {
+        display: none;
+      }
+    }
+  }
+}

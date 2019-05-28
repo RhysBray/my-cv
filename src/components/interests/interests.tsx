@@ -14,10 +14,10 @@ class Interests extends React.Component<IProps, IState> {
 
         <ul className={styles.info}>
           <h4 className={styles["sub-heading"]}>Gaming |</h4>
-          <li>light competitiveness with fiends and family, on PC and Xbox</li>
+          <li>Light competitiveness with fiends and family, on PC and Xbox.</li>
           <h4 className={styles["sub-heading"]}>Gym |</h4>
           <li>
-            not just a way for me to keep fit, but a rewarding way to set myself
+            Not just a way for me to keep fit, but a rewarding way to set myself
             targets each session.
           </li>
           <h4 className={styles["sub-heading"]}>Learning new things |</h4>

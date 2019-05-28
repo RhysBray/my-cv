@@ -44,6 +44,7 @@ class Header extends React.Component<IProps, IState> {
             <a
               href="https://www.linkedin.com/in/rhys-bray-278a70147/"
               target="_blank"
+              rel="noopener noreferrer"
               className={styles.icon}
             >
               <FontAwesomeIcon icon={faLinkedin} />
@@ -51,6 +52,7 @@ class Header extends React.Component<IProps, IState> {
             <a
               href="https://github.com/RhysBray"
               target="_blank"
+              rel="noopener noreferrer"
               className={styles.icon}
             >
               <FontAwesomeIcon icon={faGithubSquare} />

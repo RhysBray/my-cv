@@ -33,6 +33,10 @@
   .sub-heading {
     font-size: 20pt;
   }
+  .main-box {
+    display: flex;
+    flex-direction: column;
+  }
   .info {
     li {
       font-size: 15pt;

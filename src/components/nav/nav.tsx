@@ -32,6 +32,15 @@ class Nav extends React.Component<IProps, IState> {
             <NavLink
               onClick={this.props.showMenu}
               className={styles.navlink}
+              to="/nology"
+            >
+              _nology
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              onClick={this.props.showMenu}
+              className={styles.navlink}
               to="/tech-skills"
             >
               Tech Skills

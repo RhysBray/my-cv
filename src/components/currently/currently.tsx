@@ -9,26 +9,24 @@ class Currently extends React.Component<IProps, IState> {
   public render() {
     return (
       <section>
-        <h3 className={styles.title}>Currently</h3>
+        <h3 className={styles.title}>WPC Software</h3>
         <div className={styles.line} />
-        <h4 className={styles["sub-heading"]}>Software Developer Junior |</h4>
+        <h4 className={styles["sub-heading"]}>
+          Software Developer Junior | September 2019 – Present
+        </h4>
         <ul className={styles.info}>
           <li>
             <p>
-              Fresh out of a 12-week intensive training course at _nology where
-              the goal was to take my personal motivation to learn and turn it
-              into leading industry talent in a short time-space.
+              Due to the nature of the work in dealing with sensitive police
+              data there is a 6 month probationary period to ensure their
+              standards are met. Within which I have been studying hard on the
+              technologies used by the company on their production code in
+              preparation for the Microsoft exams.
             </p>
             <p>
-              During the time on the course I’ve learnt a range of skills from
-              semantic HTML5 all the way to building apps in React.
-            </p>
-            <p>
-              Using these new skills I completed challenges and projects to
-              finally culminate in a real project for a real client as a
-              development team, taking the process from breaking down user
-              stories to delivering the product to the owner that meets their
-              standards.
+              This has taken the form of reading a range of books whilst
+              completing the tasks, practicing via katas and the creation of
+              small projects set out by the company.
             </p>
           </li>
         </ul>

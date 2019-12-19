@@ -8,6 +8,7 @@ import QualificationsContainer from "./containers/qualificationsContainer";
 import AcheivementsContainer from "./containers/acheivementsContainer";
 import WorkContainer from "./containers/workContainer";
 import InterestsContainer from "./containers/interestsContainer";
+import NologyContainer from "./containers/_nologyContainer";
 import { Route, Router, Redirect, Switch } from "react-router-dom";
 import history from "./history";
 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
               <Route path="/currently" component={CurrentlyContainer} />
               <Route path="/tech-skills" component={TechSkillsContainer} />
               <Route path="/summary" component={SummaryContainer} />
+              <Route path="/nology" component={NologyContainer} />
               <Route
                 path="/qualifications"
                 component={QualificationsContainer}

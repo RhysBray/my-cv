@@ -11,18 +11,14 @@
 .sub-heading {
   @extend %sub-heading;
 }
-.main-box {
-  display: flex;
-  justify-content: space-around;
-}
 .info {
   @extend %info;
   li {
     @extend %li;
-  }
-  p {
-    @extend %li;
-    padding: 5px;
+    p {
+      @extend %li;
+      padding: 5px;
+    }
   }
 }
 
